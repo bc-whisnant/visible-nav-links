@@ -5,10 +5,7 @@
 <script>
 export default {
   name: 'MenuItem',
-  props: ['visible', 'text']
+  props: ['text']
 }
 </script>
 
-<style>
-
-</style>

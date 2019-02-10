@@ -1,41 +1,85 @@
 {
   "links": [
     { 
+      "section": "company",
       "id": "Home Builders",
       "visible": true
     },
     { 
+      "section": "company",
       "id": "Program Sponsors",
       "visible": false
 
     },
-    { 
+    {
+      "section": "company",
       "id": "Providers",
       "visible": true
 
     },
-    { 
+    {
+      "section": "company", 
       "id": "Rating Companies",
       "visible": true
     },
-    { 
+    {
+      "section": "company", 
       "id": "Utility Companies",
       "visible": false
     },
-    { 
+    {
+      "section": "company", 
       "id": "HVAC Contractors",
       "visible": false
     },
-    { 
+    {
+      "section": "company", 
       "id": "QA/QC Companies",
       "visible": false
     },
-    { 
+    {
+      "section": "company", 
       "id": "General Companies",
       "visible": false
     },
-    { 
+    {
+      "section": "company", 
       "id": "EPA Directory",
+      "visible": false
+    },
+    {
+      "section": "places", 
+      "id": "Community List",
+      "visible": true
+    },
+    {
+      "section": "places", 
+      "id": "Subdivisions",
+      "visible": false
+    },
+    {
+      "section": "places", 
+      "id": "Homes",
+      "visible": true
+    },
+    {
+      "section": "places", 
+      "id": "Floorlans",
+      "visible": true
+    },
+    {
+      "section": "placesTrc", 
+      "id": "Projects",
+      "visible": true
+    },
+    {
+      "section": "placesTrc", 
+      "id": "Building",
+      "visible": true
+    },
+    {
+      "section": "placesTrc", 
+      "id": "Builders",
       "visible": false
     }
   ]

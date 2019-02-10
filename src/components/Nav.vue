@@ -2,7 +2,17 @@
   <b-navbar toggleable="md" type="dark" variant="dark">
     <b-dropdown id="ddown1" text="Companies" class="m-md-2">
       <div>
-        <menu-item v-for="(item, index) in visible" :key="index" :text="item.id"></menu-item>
+        <menu-item v-for="(item, index) in visibleCompany" :key="index" :text="item.id"></menu-item>
+      </div>
+    </b-dropdown>
+    <b-dropdown id="ddown1" text="Testing" class="m-md-2">
+      <div>
+        <menu-item v-for="(item, index) in visiblePlaces" :key="index" :text="item.id"></menu-item>
+      </div>
+      <b-dropdown-divider></b-dropdown-divider>
+      <b-dropdown-header>TRC</b-dropdown-header>
+      <div>
+        <menu-item v-for="(item, index) in visiblePlacesTrc" :key="index" :text="item.id"></menu-item>
       </div>
     </b-dropdown>
   </b-navbar>
@@ -15,17 +25,6 @@ export default {
   name: 'Nav',
   data() {
     return {
-      items: [
-        'Home Builders',
-        'Program Sponsors',
-        'Providers',
-        'Rating Companies',
-        'Utility Companies',
-        'HVAC Contractors',
-        'QA/QC Companies',
-        'General Companies',
-        'EPA Directory'
-      ],
       linksToFilter: []
     }
   },
@@ -39,13 +38,25 @@ export default {
       })
   },
   computed: {
-    visible: function() {
+    visibleCompany: function() {
       return this.linksToFilter.filter(function(link) {
-        let visible = link.visible === true
-        return visible
+          let visibleCompany = link.visible === true && link.section === 'company'
+          return visibleCompany
+      })
+    },
+    visiblePlaces: function() {
+    return this.linksToFilter.filter(function(link) {
+          let visiblePlaces = link.visible === true && link.section === 'places'
+          return visiblePlaces
+      })
+    },
+    visiblePlacesTrc: function() {
+    return this.linksToFilter.filter(function(link) {
+          let visiblePlacesTrc = link.visible === true && link.section === 'placesTrc'
+          return visiblePlacesTrc
       })
     }
-  }
+  }, 
 }
 </script>
 
