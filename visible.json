@@ -1,0 +1,42 @@
+{
+  "links": [
+    { 
+      "id": "Home Builders",
+      "visible": true
+    },
+    { 
+      "id": "Program Sponsors",
+      "visible": false
+
+    },
+    { 
+      "id": "Providers",
+      "visible": true
+
+    },
+    { 
+      "id": "Rating Companies",
+      "visible": true
+    },
+    { 
+      "id": "Utility Companies",
+      "visible": false
+    },
+    { 
+      "id": "HVAC Contractors",
+      "visible": false
+    },
+    { 
+      "id": "QA/QC Companies",
+      "visible": false
+    },
+    { 
+      "id": "General Companies",
+      "visible": false
+    },
+    { 
+      "id": "EPA Directory",
+      "visible": false
+    }
+  ]
+}
